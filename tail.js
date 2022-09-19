@@ -12,12 +12,7 @@ const tail = function(array) {
   let copy = array;
   copy.shift();
   return copy;
-}
-
-console.log(tail([]));
-
-const result = tail([1, 2, 3]);
-const expected = [2, 3];
+};
 
 assertEqual(tail([1, 2, 3]).join(), [2, 3].join());
 assertEqual(tail([3]).join(), [].join());
