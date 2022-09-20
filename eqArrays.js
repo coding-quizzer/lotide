@@ -1,12 +1,12 @@
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
 
   if (array1.length !== array2.length) {
     return false;
   }
-  
-  return (array1.some((element, index) => (array2[index] !== element)) === false)
 
-}
+  return (array1.some((element, index) => (array2[index] !== element)) === false);
+
+};
 
 const assertEqual = function(actual, expected) {
 
