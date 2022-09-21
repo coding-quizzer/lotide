@@ -1,0 +1,32 @@
+const assertEqual = function(actual, expected) {
+  
+  if (actual === expected) {
+    console.log(`\u{1F7E2}Assertion Passed\u{1F7E2}: ${actual} === ${expected}`);
+  } else {
+    console.log(`\u{1F534}Assertion Failed\u{1F534}: ${actual} !==   ${expected}`);
+  }
+  
+};
+
+const findKeyByValue = function(object, value) {
+
+}
+
+const bestTVShowsByGenre = {
+  sci_fi: "The Expance",
+  comedy: "Brooklyn Nine-Nine",
+  drama: "The Wire"
+};
+
+const apple = {
+  type: "granny smith",
+  color: "lime green",
+  sizeInInches: 5,
+  species: "granny smith",
+};
+
+assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+assertEqual(findKeyByValue(bestTVShowsByGenre, "The '70s Show"), undefined);
+assertEqual(findKeyByValue(apple, "granny smith"), "type");
+assertEqual(findKeyByValue(apple, 5), "sizeInInches");
+assertEqual(findKeyByValue(apple, "paper thin"), undefined);
