@@ -45,11 +45,6 @@ const eqObjects = function(object1, object2) {
   }
   
   return true;
-  // check if object1 and object2 have the same number of keys
-
-  // if they do, check that the values of every key are the same for both objects
-
-
 };
 
 const ab = { a: "1", b: "2" };
