@@ -22,32 +22,15 @@ const without = function(source, itemsToRemove) {
 
   let newArray = source;
   for (let item of itemsToRemove) {
-    newArray = removeItem(newArray, item);
-  }
-
-  return newArray;
-
-
-};
-
-const removeItem = function(source, item) {
-  let newArray = [];
-
-  for (let element of source) {
-    if (element !== item) {
-      newArray.push(element);
-    }
+    
+    newArray = newArray.filter((element) => element !== item);
   }
 
   return newArray;
 };
 
-assertArraysEqual(removeItem([1, 3, 4, 2, 3, 6], 3), [1, 4, 2, 6]);
-assertArraysEqual(removeItem([1, 3, 4, 2, 3, 6], 5), [1, 3, 4, 2, 3, 6]);
-assertArraysEqual(removeItem([1, 3, 4, 2, 3, 6], 2), [1, 3, 4, 3, 6]);
 assertArraysEqual(without([1, 3, 4, 2, 3, 6], [2]), [1, 3, 4, 3, 6]);
 assertArraysEqual(without([1, 3, 4, 2, 3, 6], [1, 3, 5]), [4, 2, 6]);
-
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 
 const words = ["hello", "world", "lighthouse"];
