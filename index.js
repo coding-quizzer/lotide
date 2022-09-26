@@ -19,21 +19,21 @@ const map = require('./map');
 
 module.exports = {
 
-  head: head,
-  tail: tail,
-  middle: middle,
-  assertEqual: assertEqual,
-  eqArrays: eqArrays,
-  assertArraysEqual: assertArraysEqual,
-  flatten: flatten,
-  without: without,
-  countLetters: countLetters,
-  letterPositions: letterPositions,
-  countOnly: countOnly,
-  eqObjects: eqObjects,
-  assertObjectsEqual: assertObjectsEqual,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  takeUntil: takeUntil,
-  map: map
+  head,
+  tail,
+  middle,
+  assertEqual,
+  eqArrays,
+  assertArraysEqual,
+  flatten,
+  without,
+  countLetters,
+  letterPositions,
+  countOnly,
+  eqObjects,
+  assertObjectsEqual,
+  findKey,
+  findKeyByValue,
+  takeUntil,
+  map
 };
