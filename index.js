@@ -21,5 +21,19 @@ module.exports = {
 
   head: head,
   tail: tail,
-  middle: middle
+  middle: middle,
+  assertEqual: assertEqual,
+  eqArrays: eqArrays,
+  assertArraysEqual: assertArraysEqual,
+  flatten: flatten,
+  without: without,
+  countLetters: countLetters,
+  letterPositions: letterPositions,
+  countOnly: countOnly,
+  eqObjects: eqObjects,
+  assertObjectsEqual: assertObjectsEqual,
+  findKey: findKey,
+  findKeyByValue: findKeyByValue,
+  takeUntil: takeUntil,
+  map: map
 };
