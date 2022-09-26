@@ -43,3 +43,5 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "The '70s Show"), undefined);
 assertEqual(findKeyByValue(apple, "granny smith"), "type");
 assertEqual(findKeyByValue(apple, 5), "sizeInInches");
 assertEqual(findKeyByValue(apple, "paper thin"), undefined);
+
+module.exports = findKeyByValue;

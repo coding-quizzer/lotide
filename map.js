@@ -40,3 +40,5 @@ const results2 = map([1, 4, 2, 3], number => number * number);
 
 assertArraysEqual(results2, [1, 16, 4, 9]);
 assertArraysEqual(map(["power", "light", "party", "tree", "boat"], word => word + "house"), ["powerhouse", "lighthouse", "partyhouse", "treehouse", "boathouse"]);
+
+module.exports = map;

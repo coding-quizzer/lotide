@@ -59,3 +59,5 @@ assertArraysEqual(letterPositions(test2).r, [8]);
 assertArraysEqual(letterPositions(test2).d, [10]);
 
 console.log(letterPositions(test2));
+
+module.exports = letterPositions;

@@ -49,3 +49,5 @@ assertEqual(findKey(apple, value => value === "granny smith"), "type");
 assertEqual(findKey(apple, value => value === 5), "sizeInInches");
 assertEqual(findKey(apple, value => value === "paper thin"), undefined);
 assertEqual(findKey(numbers, value => value < 4), "first");
+
+module.exports = (findKey);

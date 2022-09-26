@@ -46,3 +46,5 @@ assertEqual(countLetters(test1).t, 2);
 console.log("test:", test1);
 
 console.log(countLetters(test2));
+
+module.exports = countLetters;
